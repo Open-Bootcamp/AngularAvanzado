@@ -1,0 +1,23 @@
+<!-- * 1. Ejemplo de estrategia OnPush para ChangeDetection -->
+<!-- <app-on-push></app-on-push> -->
+
+<!-- * 2. Ejemplo de uso de métodos detach() y detectChanges() -->
+<!-- <app-detach></app-detach> -->
+
+<!-- * 3. Ejemplo de uso de método detach() y reattach() -->
+<!-- <app-reattach [enVivo]="live" ></app-reattach> -->
+<!-- <h5>
+  ¿Mostrar precio Bitcoin en vivo?
+</h5>
+<input type="checkbox" [(ngModel)]="live" /> -->
+
+<!-- * 4. Ejemplo de uso de AngularZone (ngZone) -->
+<!-- <app-ng-zone></app-ng-zone> -->
+
+<!-- * 5. Ejemplo de uso de PIPE Asíncrono de Angular -->
+<app-async-pipe [items$]="items$"></app-async-pipe>
+
+<!-- Botón para emitir una nueva lista con nuevo valor al componente Async Pipe -->
+<button (click)="addItem()">
+  Añadir nuevo Item a la lista
+</button>
