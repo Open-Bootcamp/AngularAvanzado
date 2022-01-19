@@ -1,0 +1,11 @@
+<!-- * 1. Ejemplo de uso de Directiva de Atributo personalizada -->
+<!-- <app-ejemplo-attr></app-ejemplo-attr> -->
+<!-- * 2. Ejemplo de uso de Directiva Escrutuctural personalizada -->
+<!-- <app-ejemplo-struct></app-ejemplo-struct> -->
+<!-- * 3. Ejempli de uso de directiva espía del ciclo de vida de componentes -->
+<app-ejemplo-life-cycle appLifeCycle *rolCorrecto="rol"></app-ejemplo-life-cycle>
+
+<!-- Botón para instanciar/eliminar el componente app-ejemplo-life-cycle -->
+<button (click)="cambiarRol()">
+  {{ !rol ? 'Crear Componente' : ' Destruir componente' }}
+</button>
